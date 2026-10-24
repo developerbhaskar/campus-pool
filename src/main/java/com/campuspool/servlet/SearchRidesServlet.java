@@ -2,9 +2,9 @@ package com.campuspool.servlet;
 
 import com.campuspool.dao.RideDAO;
 import com.campuspool.model.Ride;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.*;
 
 import java.io.IOException;
 import java.sql.Date;
@@ -16,7 +16,8 @@ public class SearchRidesServlet extends HttpServlet {
             throws ServletException, IOException {
 
         String destination = req.getParameter("destination");
-        if (destination == null) destination = "";
+        if (destination == null)
+            destination = "";
 
         String dateParam = req.getParameter("date");
         Date date = (dateParam == null || dateParam.isBlank()) ? null : Date.valueOf(dateParam);
