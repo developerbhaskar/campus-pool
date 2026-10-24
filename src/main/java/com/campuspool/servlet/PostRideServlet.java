@@ -3,9 +3,9 @@ package com.campuspool.servlet;
 import com.campuspool.dao.RideDAO;
 import com.campuspool.model.Ride;
 import com.campuspool.model.User;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.*;
 
 import java.io.IOException;
 import java.math.BigDecimal;
